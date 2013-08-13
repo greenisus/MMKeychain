@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/greenisus/MMKeychain"
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author       = { "Mike Mayo" => "greenisus@gmail.com" }
-  s.source       = { :git => "http://github.com/greenisus/MMKeychain.git", :tag => "1.0" }
+  s.source       = { :git => "https://github.com/greenisus/MMKeychain.git", :tag => "1.0" }
   s.source_files = '*.{h,m}'
   s.framework  = 'Security'
   s.requires_arc = true

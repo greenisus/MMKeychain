@@ -113,7 +113,7 @@
 	OSStatus res = SecItemCopyMatching((__bridge CFDictionaryRef)existsQueryDictionary, (CFTypeRef *)&typeRef);
 	if (res == errSecSuccess) {
         
-        data = (NSData *)typeRef;
+        data = (__bridge NSData *)typeRef;
 		NSString *string = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
 		return string;
 	} else {
